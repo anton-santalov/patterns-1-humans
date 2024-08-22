@@ -40,7 +40,7 @@ public class Person {
     }
 
     public OptionalInt getAge() {
-        return OptionalInt.of(age);
+        return age != null ? OptionalInt.of(age) : OptionalInt.empty();
     }
 
     public String getAddress() {
